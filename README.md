@@ -1,3 +1,3 @@
 Kid from Akron.
 
-(assets/BRON.jpg)
+![alt text](assets/BRON.jpg)
