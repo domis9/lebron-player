@@ -4,15 +4,22 @@ document.addEventListener("DOMContentLoaded", () => {
     // set volume
     audioPlayer.volume = 0.8; 
 
+    // Try to play the audio automatically when the DOM is loaded
+    audioPlayer.play().then(() => {
+        // Audio is playing, do nothing
+    }).catch(err => {
+        console.log("Error playing audio: ", err);
+        // Audio could not play automatically due to restrictions, give user a button to play
+        playButton.style.display = "block"; // Show play button if audio doesn't play automatically
+    });
+
     playButton.addEventListener("click", () => {
-        // Toggle mute status
-        audioPlayer.muted = !audioPlayer.muted;
-        
-        // Optionally, update the button text to reflect the action
-        if (audioPlayer.muted) {
-            playButton.textContent = "Unmute Audio";
+        if (audioPlayer.paused) {
+            audioPlayer.play();  // Play audio when clicked
+            playButton.style.display = "none"; // Hide button after play
         } else {
-            playButton.textContent = "Mute Audio";
+            audioPlayer.pause(); // Pause audio when clicked again
+            playButton.style.display = "block"; // Show button if paused
         }
     });
 });
