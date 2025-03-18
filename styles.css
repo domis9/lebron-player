@@ -1,4 +1,4 @@
-/* Body style */
+
 body {
     text-align: center;
     background-image: url('assets/08e1ec8ef952b40627885ed746af9146.jpg');
@@ -20,7 +20,7 @@ body {
 
 
 
-/* Fullscreen video */
+
 #video-container {
     position: fixed;
     top: 0;
@@ -37,7 +37,7 @@ video {
 }
 
 
-/* Scrolling text container */
+
 .scrolling-text-container-top {
     width: 100%;
     overflow: hidden;
@@ -58,7 +58,7 @@ video {
     display: flex;
 }
 
-/* Wrapper */
+
 .scrolling-wrapper {
     display: flex;
     flex-wrap: nowrap;
@@ -66,7 +66,7 @@ video {
     animation: scrollText 10s linear infinite;
 }
 
-/* Scrolling text with rainbow effect */
+
 .scrolling-text {
     font-size: 2em;
     font-weight: bold;
@@ -80,7 +80,7 @@ video {
     cursor: pointer;
     width: 100px;  
     height: 100px; 
-    animation: spin 2s infinite linear; /* apply spin animation */
+    animation: spin 2s infinite linear; 
 }
 
 /* spin */
