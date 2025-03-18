@@ -63,7 +63,7 @@ video {
     display: flex;
     flex-wrap: nowrap;
     width: max-content; 
-    animation: scrollText 10s linear infinite;
+    animation: scrollText 140s linear infinite;
 }
 
 
