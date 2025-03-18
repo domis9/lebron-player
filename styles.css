@@ -76,6 +76,23 @@ video {
     animation: rainbow 20s infinite;
 }
 
+#playButton {
+    cursor: pointer;
+    width: 100px;  
+    height: 100px; 
+    animation: spin 2s infinite linear; /* apply spin animation */
+}
+
+/* spin */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 @keyframes scrollText {
     0% { transform: translateX(0); }
     100% { transform: translateX(-50%); }
